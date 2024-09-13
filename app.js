@@ -42,9 +42,12 @@ function pesquisar() {
       // cria um novo elemento
       resultados += `
           <div class="item-resultado">
+            <img src="${dado.img}"/>
+            <div class="item-conteudo>
             <h2><a href="#">${dado.titulo}</a></h2>
             <p class="descricao-meta">${dado.descricao}</p>
             <a href="${dado.link}" target="_blank">mais informações</a>
+            </div>
           </div>
         `;
     }

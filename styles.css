@@ -13,6 +13,18 @@ body {
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
 }
+.myVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+  
+  }
 
 /* Estiliza os títulos h1 */
 h1 {
@@ -76,6 +88,14 @@ section button:hover {
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    display: flex;
+    img {
+       border-radius: 0.6rem; /* Borda arredondada */
+       height: 200px;
+       width: 200px;
+       margin-right: 10px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    }
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
