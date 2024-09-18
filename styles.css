@@ -13,23 +13,33 @@ body {
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
 }
+
+/* Estiliza do Vídeo de fundo */
 .myVideo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-50%);
+  /* Define o posicionamento do vídeo como fixo na viewport */
+  position: fixed;
+  /* Centraliza o vídeo verticalmente */
+  top: 50%;
+  /* Centraliza o vídeo horizontalmente */
+  left: 50%;
+  /* Garante que o vídeo ocupe pelo menos toda a largura da viewport */
+  min-width: 100%;
+  /* Garante que o vídeo ocupe pelo menos toda a altura da viewport */
+  min-height: 100%;
+  /* Permite que o vídeo ajuste sua largura e altura automaticamente, mantendo as proporções */
+  width: auto;
+  height: auto;
+  /* Coloca o vídeo atrás de outros elementos na página */
+  z-index: -1;
+  /* Centraliza o vídeo horizontal e verticalmente usando transformações */
+  transform: translateX(-50%) translateY(-50%);
   
   }
 
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: aliceblue; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
@@ -83,20 +93,32 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    /* Define a cor de fundo do item como branco */
+    background-color: #FFFFFF; 
+    /* Cria bordas arredondadas nos cantos do item */
+    border-radius: 0.6rem;
+    /* Adiciona um espaço interno dentro do item */
+    padding: 1rem; 
+    /* Cria um espaço abaixo do item para separá-lo dos outros */
+    margin-bottom: 1rem; 
+    /* Aplica uma sombra leve ao item para criar um efeito 3D sutil */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Define o layout do item como flexbox para melhor organização dos elementos internos */
     display: flex;
+  
+    /* Estiliza a imagem dentro do item */
     img {
-       border-radius: 0.6rem; /* Borda arredondada */
-       height: 200px;
-       width: 200px;
-       margin-right: 10px;
-       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+      /* Cria bordas arredondadas na imagem */
+      border-radius: 0.6rem;
+      /* Define a altura e largura da imagem */
+      height: 200px;
+      width: 200px;
+      /* Cria um espaço à direita da imagem */
+      margin-right: 10px;
+      /* Aplica uma sombra leve à imagem */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-}
+  }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
