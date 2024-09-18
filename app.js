@@ -18,7 +18,7 @@ function pesquisar() {
   let campoPesquisa = document.getElementById("campo-pesquisa").value
   // se o campoPesquisa  for uma string vazio
   if (!campoPesquisa) {
-    section.innerHTML = "<p> Nada foi encontrado </p>"
+    section.innerHTML = `<p class="paragrafo-nada-encontrado"> Nada foi encontrado </p>`
     return
 
   }
@@ -53,9 +53,10 @@ function pesquisar() {
     }
 
   }
+  // se o resultado  não foi  encontrado 
   if (!resultados) {
 
-    section.innerHTML = "<p> Nada foi encontrado . precisa digitar nome da marcar de carro </p>"
+    section.innerHTML = `<p class="paragrafo-nada-encontrado"> Nada foi encontrado. precisa digitar nome da marcar de carro </p>`
     return
 
   }
